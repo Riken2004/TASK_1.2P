@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="web.css"> 
+</head>
+<body>
+
+<div class="header">
+  <h1>INTRODUCTION TO RESPONSIVE WEB APPS</h1>
+</div>
+
+<div class="content">
+  <h2>TASK 1.2P</h2>
+  <p>Students will learn about HTML, CSS, and JavaScript, as well as advanced web design frameworks.</p>
+  <p>It teaches students the fundamentals of responsive web app design and development.</p>
+</div>
+
+<footer class="footer">
+  <p>@Copyright 2023 | Thankyou for watching</p>
+</footer>
+
+
+<script>
+  // String method
+  let str = "Riken Patel";
+  let strLength = str.length;
+  let upperCaseStr = str.toUpperCase();
+  let lowerCaseStr = str.toLowerCase();
+  let indexOfSpace = str.indexOf(" ");
+  let replacedStr = str.replace("Riken Patel", "mickey");
+
+  // Number methods
+  let num = 42.789;
+  let fixedNum = num.toFixed(2);
+  let stringNum = num.toString();
+  let isIntegerNum = Number.isInteger(num);
+  let parsedNum = parseFloat("3.14");
+  let parsedFloatNum = parseFloat("123.45");
+
+  // Array methods
+  let array = [1, 2, 3, "four", "five"];
+  let arrayLength = array.length;
+  let concatenatedArray = array.concat([6, 7]);
+  let indexOfFour = array.indexOf("four");
+  let slicedArray = array.slice(1, 4);
+  let reversedArray = array.reverse();
+
+  // Date methods
+  let currentDate = new Date();
+  let year = currentDate.getFullYear();
+  let month = currentDate.getMonth();
+  let date = currentDate.getDate();
+  let hours = currentDate.getHours();
+  let minutes = currentDate.getMinutes();
+
+  // Function methods
+  function greet(name) {
+    return "Hello, " + name + "!";
+  }
+  
+  let sum = function(a, b) {
+    return a + b;
+  };
+
+  function multiply(x, y) {
+     return x * y;
+  };
+
+
+  // Display results
+  document.write('<h3> String method : </h3> ');
+  document.write('The chosen string is: ' + str + '<br>');
+  document.write('The length of the string is: ' + strLength + '<br>');
+  document.write('uppercase: ' + upperCaseStr + '<br>');
+  document.write('lowercase: ' + lowerCaseStr + '<br>');
+  document.write('index: ' + indexOfSpace + '<br>');
+  document.write('Replace: ' + replacedStr + '<br>');
+
+  document.write('<h3> Number method : </h3> ');
+  document.write('Number: ' + num + '<br>');
+  document.write('fixedNum: ' + fixedNum + '<br>');
+  document.write('String number: ' + stringNum + '<br>');
+  document.write('integer number: ' + isIntegerNum + '<br>');
+  document.write('parsednumber: ' + parsedNum + '<br>');
+  document.write('float number: ' + parsedFloatNum + '<br>');
+
+  document.write('<h3> Array method : </h3> ');
+  document.write('The choosen Array is: ' + array + '<br>');
+  document.write('The length of array is: ' + arrayLength + '<br>');
+  document.write('concatenatedArray: ' + concatenatedArray + '<br>');
+  document.write('indexoffour: ' + indexOfFour + '<br>');
+  document.write('slicedarray: ' + slicedArray + '<br>');
+  document.write('Reverse Array: ' + reversedArray + '<br>');
+
+  document.write('<h3> Date method : </h3> ');
+  document.write('The choosen Date is: ' + currentDate + '<br>');
+  document.write('Year: ' + year + '<br>');
+  document.write('Month: ' + month + '<br>');
+  document.write('Date: ' + date + '<br>');
+  document.write('Hour: ' + hours + '<br>');
+  document.write('Minute: ' + minutes + '<br>');
+
+  document.write('<h3> Function methods : </h3>');
+  document.write(greet("Mickey") + '<br>');
+  document.write('Sum of 5 and 7: ' + sum(5, 7) + '<br>');
+  document.write('multiply of 5 and 7: ' + multiply(5, 7) + '<br>');
+
+
+  document.body.appendChild(output);
+</script>
+
+</body>
+</html>
